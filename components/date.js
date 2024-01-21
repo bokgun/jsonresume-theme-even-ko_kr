@@ -5,10 +5,10 @@ import html from '../utils/html.js'
  * @returns {string}
  */
 const formatDate = dateString =>
-  new Date(dateString).toLocaleDateString('en', {
+  new Date(dateString).toLocaleDateString('ko', {
     month: 'short',
     year: 'numeric',
-    timeZone: 'UTC',
+    timeZone: 'KST',
   })
 
 /**

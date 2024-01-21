@@ -9,7 +9,7 @@ export default function Interests(interests = []) {
     interests.length > 0 &&
     html`
       <section id="interests">
-        <h3>Interests</h3>
+        <h3>관심 분야</h3>
         <div class="grid-list">
           ${interests.map(
             ({ keywords = [], name }) => html`

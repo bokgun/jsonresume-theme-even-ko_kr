@@ -12,7 +12,7 @@ export default function Publications(publications = []) {
     publications.length > 0 &&
     html`
       <section id="publications">
-        <h3>Publications</h3>
+        <h3>저서</h3>
         <div class="stack">
           ${publications.map(
             ({ name, publisher, releaseDate, summary, url }) => html`

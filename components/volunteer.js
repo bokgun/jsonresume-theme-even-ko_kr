@@ -12,7 +12,7 @@ export default function Volunteer(volunteer = []) {
     volunteer.length > 0 &&
     html`
       <section id="volunteer">
-        <h3>Volunteer</h3>
+        <h3>봉사활동</h3>
         <div class="stack">
           ${volunteer.map(
             ({ highlights = [], organization, position, startDate, endDate, summary, url }) => html`

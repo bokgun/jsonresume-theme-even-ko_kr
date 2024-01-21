@@ -8,7 +8,7 @@ import Link from './link.js'
  * @returns {string | undefined}
  */
 const formatCountry = countryCode =>
-  Intl.DisplayNames ? new Intl.DisplayNames(['en'], { type: 'region' }).of(countryCode) : countryCode
+  Intl.DisplayNames ? new Intl.DisplayNames(['ko'], { type: 'region' }).of(countryCode) : countryCode
 
 /**
  * @param {import('../schema.d.ts').ResumeSchema['basics']} basics
