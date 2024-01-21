@@ -8,7 +8,7 @@ const formatDate = dateString =>
   new Date(dateString).toLocaleDateString('ko', {
     month: 'short',
     year: 'numeric',
-    timeZone: 'KST',
+    timezone: 'KST',
   })
 
 /**
