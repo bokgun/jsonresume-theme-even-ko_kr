@@ -21,7 +21,7 @@ import html from './utils/html.js'
  */
 export default function Resume(resume, css) {
   return html`<!doctype html>
-    <html lang="en" style="${colors(resume.meta)}">
+    <html lang="ko" style="${colors(resume.meta)}">
       <head>
         <meta charset="utf-8" />
         ${Meta(resume.basics)}

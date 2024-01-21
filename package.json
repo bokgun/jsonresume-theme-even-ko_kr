@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-even",
+  "name": "jsonresume-theme-even-ko_kr",
   "version": "0.22.0",
   "description": "A flat JSON Resume theme, compatible with the latest resume schema",
   "keywords": [
@@ -8,15 +8,16 @@
     "theme",
     "flat",
     "curriculum-vitae",
-    "cv"
+    "cv",
+    "Korean"
   ],
-  "homepage": "https://jsonresume-theme-even.rbrd.in/",
+  "homepage": "https://github.com/bokgun/jsonresume-theme-even-ko_kr",
   "bugs": {
-    "url": "https://github.com/rbardini/jsonresume-theme-even/issues"
+    "url": "https://github.com/bokgun/jsonresume-theme-even-ko_kr"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rbardini/jsonresume-theme-even"
+    "url": "https://github.com/bokgun/jsonresume-theme-even-ko_kr"
   },
   "license": "MIT",
   "author": "Rafael Bardini",
@@ -31,7 +32,7 @@
   "source": "index.js",
   "typings": "./dist/index.d.ts",
   "bin": {
-    "jsonresume-theme-even": "bin/cli.js"
+    "jsonresume-theme-even-ko_kr": "bin/cli.js"
   },
   "files": [
     "bin",
