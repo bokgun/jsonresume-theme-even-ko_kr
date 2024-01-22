@@ -111,7 +111,7 @@ exports[`renders a resume 1`] = `
       </section>
      
       <section id=\\"education\\">
-        <h3>교육 내역</h3>
+        <h3>교육</h3>
         <div class=\\"stack\\">
           
               <article>
@@ -124,7 +124,7 @@ exports[`renders a resume 1`] = `
                 </header>
                 <p>Bachelor</p>
                 
-                  <h5>이수내역</h5>
+                  <h5>이수</h5>
                   <ul>
                     <li><p>DB1101 - Basic SQL</p></li><li><p>CS2011 - Java Introduction</p></li>
                   </ul>
@@ -136,7 +136,7 @@ exports[`renders a resume 1`] = `
     
         
       <section id=\\"projects\\">
-        <h3>프로젝트 내역</h3>
+        <h3>프로젝트</h3>
         <div class=\\"stack\\">
           
               <article>
@@ -167,7 +167,7 @@ exports[`renders a resume 1`] = `
       </section>
      
       <section id=\\"awards\\">
-        <h3>수상내역</h3>
+        <h3>수상</h3>
         <div class=\\"stack\\">
           
               <article>
@@ -185,7 +185,7 @@ exports[`renders a resume 1`] = `
      
         
       <section id=\\"publications\\">
-        <h3>저서</h3>
+        <h3>출판/발행</h3>
         <div class=\\"stack\\">
           
               <article>
@@ -203,7 +203,7 @@ exports[`renders a resume 1`] = `
       </section>
      
       <section id=\\"skills\\">
-        <h3>보유 스킬 내역</h3>
+        <h3>보유 스킬</h3>
         <div class=\\"grid-list\\">
           
               <div>

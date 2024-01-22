@@ -18,7 +18,7 @@ export default function Projects(projects = []) {
     projects.length > 0 &&
     html`
       <section id="projects">
-        <h3>프로젝트 내역</h3>
+        <h3>프로젝트</h3>
         <div class="stack">
           ${projects.map(
             ({

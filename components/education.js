@@ -12,7 +12,7 @@ export default function Education(education = []) {
     education.length > 0 &&
     html`
       <section id="education">
-        <h3>교육 내역</h3>
+        <h3>교육</h3>
         <div class="stack">
           ${education.map(
             ({ area, courses = [], institution, startDate, endDate, studyType, url }) => html`
@@ -27,7 +27,7 @@ export default function Education(education = []) {
                 ${studyType && markdown(studyType)}
                 ${courses.length > 0 &&
                 html`
-                  <h5>이수내역</h5>
+                  <h5>이수</h5>
                   <ul>
                     ${courses.map(course => html`<li>${markdown(course)}</li>`)}
                   </ul>
