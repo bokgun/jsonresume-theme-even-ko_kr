@@ -1,6 +1,6 @@
 (function(m,u){typeof exports=="object"&&typeof module<"u"?u(exports,require("micromark"),require("striptags"),require("feather-icons")):typeof define=="function"&&define.amd?define(["exports","micromark","striptags","feather-icons"],u):(m=typeof globalThis<"u"?globalThis:m||self,u(m.jsonresumeThemeEvenKoKr={},m.micromark,m.striptags,m.feather))})(this,function(m,u,x,b){"use strict";function e(i,...t){return i.reduce((o,r,a)=>{const n=t[a];return Array.isArray(n)?o+r+n.join(""):n!=null&&!!n!==n?o+r+n:o+r},"")}function d(i,t=!1){const o=u(i);return t?x(o):o}const w=i=>new Date(i).toLocaleDateString("ko",{month:"short",year:"numeric",timezone:"KST"});function p(i){return e`<time datetime="${i}">${w(i)}</time>`}function j(i=[]){return i.length>0&&e`
       <section id="awards">
-        <h3>수상내역</h3>
+        <h3>수상</h3>
         <div class="stack">
           ${i.map(({awarder:t,date:o,summary:r,title:a})=>e`
               <article>
@@ -33,7 +33,7 @@
       </section>
     `}function y(i,t){return e`${p(i)} – ${t?p(t):"현재"}`}function q(i=[]){return i.length>0&&e`
       <section id="education">
-        <h3>교육 내역</h3>
+        <h3>교육</h3>
         <div class="stack">
           ${i.map(({area:t,courses:o=[],institution:r,startDate:a,endDate:n,studyType:l,url:c})=>e`
               <article>
@@ -46,7 +46,7 @@
                 </header>
                 ${l&&d(l)}
                 ${o.length>0&&e`
-                  <h5>이수내역</h5>
+                  <h5>이수</h5>
                   <ul>
                     ${o.map(s=>e`<li>${d(s)}</li>`)}
                   </ul>
@@ -115,7 +115,7 @@
     ${o&&e`<meta name="description" content="${d(o,!0)}" />`}
   `}const T=i=>Intl.ListFormat?new Intl.ListFormat("en").format(i):i.join(", ");function A(i=[]){return i.length>0&&e`
       <section id="projects">
-        <h3>프로젝트 내역</h3>
+        <h3>프로젝트</h3>
         <div class="stack">
           ${i.map(({description:t,entity:o,highlights:r=[],keywords:a=[],name:n,startDate:l,endDate:c,roles:s=[],type:$,url:v})=>e`
               <article>
@@ -146,7 +146,7 @@
       </section>
     `}function P(i=[]){return i.length>0&&e`
       <section id="publications">
-        <h3>저서</h3>
+        <h3>출판/발행</h3>
         <div class="stack">
           ${i.map(({name:t,publisher:o,releaseDate:r,summary:a,url:n})=>e`
               <article>
@@ -180,7 +180,7 @@
       </section>
     `}function E(i=[]){return i.length>0&&e`
       <section id="skills">
-        <h3>보유 스킬 내역</h3>
+        <h3>보유 스킬</h3>
         <div class="grid-list">
           ${i.map(({keywords:t=[],name:o})=>e`
               <div>

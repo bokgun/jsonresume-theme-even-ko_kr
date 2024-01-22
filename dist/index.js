@@ -27,7 +27,7 @@ function w(i = []) {
     i.length > 0 &&
     t`
       <section id="awards">
-        <h3>수상내역</h3>
+        <h3>수상</h3>
         <div class="stack">
           ${i.map(
             ({ awarder: e, date: o, summary: r, title: a }) => t`
@@ -83,7 +83,7 @@ function j(i = []) {
     i.length > 0 &&
     t`
       <section id="education">
-        <h3>교육 내역</h3>
+        <h3>교육</h3>
         <div class="stack">
           ${i.map(
             ({ area: e, courses: o = [], institution: r, startDate: a, endDate: n, studyType: l, url: c }) => t`
@@ -99,7 +99,7 @@ function j(i = []) {
                 ${
                   o.length > 0 &&
                   t`
-                  <h5>이수내역</h5>
+                  <h5>이수</h5>
                   <ul>
                     ${o.map(s => t`<li>${d(s)}</li>`)}
                   </ul>
@@ -227,7 +227,7 @@ function O(i = []) {
     i.length > 0 &&
     t`
       <section id="projects">
-        <h3>프로젝트 내역</h3>
+        <h3>프로젝트</h3>
         <div class="stack">
           ${i.map(
             ({
@@ -283,7 +283,7 @@ function P(i = []) {
     i.length > 0 &&
     t`
       <section id="publications">
-        <h3>저서</h3>
+        <h3>출판/발행</h3>
         <div class="stack">
           ${i.map(
             ({ name: e, publisher: o, releaseDate: r, summary: a, url: n }) => t`
@@ -336,7 +336,7 @@ function N(i = []) {
     i.length > 0 &&
     t`
       <section id="skills">
-        <h3>보유 스킬 내역</h3>
+        <h3>보유 스킬</h3>
         <div class="grid-list">
           ${i.map(
             ({ keywords: e = [], name: o }) => t`

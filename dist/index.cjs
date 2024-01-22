@@ -1,6 +1,6 @@
 "use strict";Object.defineProperty(exports,Symbol.toStringTag,{value:"Module"});const y=require("micromark"),k=require("striptags"),b=require("feather-icons");function i(t,...e){return t.reduce((o,r,a)=>{const n=e[a];return Array.isArray(n)?o+r+n.join(""):n!=null&&!!n!==n?o+r+n:o+r},"")}function d(t,e=!1){const o=y(t);return e?k(o):o}const x=t=>new Date(t).toLocaleDateString("ko",{month:"short",year:"numeric",timezone:"KST"});function u(t){return i`<time datetime="${t}">${x(t)}</time>`}function w(t=[]){return t.length>0&&i`
       <section id="awards">
-        <h3>수상내역</h3>
+        <h3>수상</h3>
         <div class="stack">
           ${t.map(({awarder:e,date:o,summary:r,title:a})=>i`
               <article>
@@ -33,7 +33,7 @@
       </section>
     `}function p(t,e){return i`${u(t)} – ${e?u(e):"현재"}`}function j(t=[]){return t.length>0&&i`
       <section id="education">
-        <h3>교육 내역</h3>
+        <h3>교육</h3>
         <div class="stack">
           ${t.map(({area:e,courses:o=[],institution:r,startDate:a,endDate:n,studyType:l,url:c})=>i`
               <article>
@@ -46,7 +46,7 @@
                 </header>
                 ${l&&d(l)}
                 ${o.length>0&&i`
-                  <h5>이수내역</h5>
+                  <h5>이수</h5>
                   <ul>
                     ${o.map(s=>i`<li>${d(s)}</li>`)}
                   </ul>
@@ -115,7 +115,7 @@
     ${o&&i`<meta name="description" content="${d(o,!0)}" />`}
   `}const O=t=>Intl.ListFormat?new Intl.ListFormat("en").format(t):t.join(", ");function A(t=[]){return t.length>0&&i`
       <section id="projects">
-        <h3>프로젝트 내역</h3>
+        <h3>프로젝트</h3>
         <div class="stack">
           ${t.map(({description:e,entity:o,highlights:r=[],keywords:a=[],name:n,startDate:l,endDate:c,roles:s=[],type:m,url:h})=>i`
               <article>
@@ -146,7 +146,7 @@
       </section>
     `}function P(t=[]){return t.length>0&&i`
       <section id="publications">
-        <h3>저서</h3>
+        <h3>출판/발행</h3>
         <div class="stack">
           ${t.map(({name:e,publisher:o,releaseDate:r,summary:a,url:n})=>i`
               <article>
@@ -180,7 +180,7 @@
       </section>
     `}function M(t=[]){return t.length>0&&i`
       <section id="skills">
-        <h3>보유 스킬 내역</h3>
+        <h3>보유 스킬</h3>
         <div class="grid-list">
           ${t.map(({keywords:e=[],name:o})=>i`
               <div>
